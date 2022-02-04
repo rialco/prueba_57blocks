@@ -8,6 +8,7 @@ const connectionString = process.env.DATABASE_URL;
 pool
   .connect({
     connectionString,
+    ssl: true,
   })
   .then(async () => {
     server().listen(PORT, () => {
