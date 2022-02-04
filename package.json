@@ -4,8 +4,8 @@
   "description": "User authentication service for the unica web app",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "dev": "node ./keys/gen-rsa-keys.js && nodemon index.js",
+    "start": "node ./keys/gen-rsa-keys.js && node index.js",
+    "dev": "nodemon index.js",
     "migrate": "node-pg-migrate"
   },
   "author": "",
