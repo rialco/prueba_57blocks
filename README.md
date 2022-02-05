@@ -16,7 +16,11 @@ El proyecto se encuentra desplegado en **Heroku** a traves del siguiente link: h
 ## **Setup local**
 
 En caso de desplegar el proyecto en un ambiente local se incluyeron migraciones para la creacion de las tablas necesarias.
-Utilizar el comando DATABASE_URL=postgres://USUARIO:PASSWORD@localhost:5432/NOMREDB npm run migrate up
+Utilizar el comando:
+
+```
+DATABASE_URL=postgres://USUARIO:PASSWORD@localhost:5432/NOMREDB npm run migrate up
+```
 
 ## **Rutas**
 
