@@ -24,23 +24,34 @@ DATABASE_URL=postgres://USUARIO:PASSWORD@localhost:5432/NOMREDB npm run migrate 
 
 ## **Rutas**
 
+La ruta de auth proporciona un JWT que debe usarse como Bearer token al momento de hacer consultas en las rutas de pokemons
+
 ### Auth
 
 - Login
   - POST : https://taller01-57blocks.herokuapp.com/auth/login
+  - body {
+    email: string, password: string
+    }
 
 ### Users
 
 - Create a new user.
   - POST : https://taller01-57blocks.herokuapp.com/users/signup
+  - body {
+    name: string, email: string, password: string
+    }
 
 ### Pokemons
 
 - Retrieve all pokemons.
   - GET : https://taller01-57blocks.herokuapp.com/pokemons/
 - Retrieve pokemons created by the user given the user id.
-  - GET : https://taller01-57blocks.herokuapp.com/pokemons/user/:id - Get pokemons created by user
+  - GET : https://taller01-57blocks.herokuapp.com/pokemons/user/:id
 - Create a new pokemon.
-  - POST : https://taller01-57blocks.herokuapp.com/pokemons/ - Create new pokemon
+  - POST : https://taller01-57blocks.herokuapp.com/pokemons/
+  - body {
+    name: string, public: boolean
+    }
 - Update one of the pokemon's fields given the pokemon's id.
-  - PATCH : https://taller01-57blocks.herokuapp.com/pokemons/:id - Update pokemon
+  - PATCH : https://taller01-57blocks.herokuapp.com/pokemons/:id
