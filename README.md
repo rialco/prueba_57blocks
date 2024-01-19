@@ -1,8 +1,8 @@
-# **Prueba 57 blocks**
+# Simple API
 
 ## **Intro**
 
-La prueba fue realizada con las siguientes tecnologias:
+La API fue realizada con las siguientes tecnologias:
 
 - Node JS
 - Express
@@ -11,7 +11,7 @@ La prueba fue realizada con las siguientes tecnologias:
 
 ## **Deployment**
 
-El proyecto se encuentra desplegado en **Heroku** a traves del siguiente link: https://taller01-57blocks.herokuapp.com/
+El proyecto se podia encontrar desplegado en **Heroku** a traves del siguiente link: https://{domain}.herokuapp.com/
 
 ## **Setup local**
 
@@ -29,7 +29,7 @@ La ruta de auth proporciona un JWT que debe usarse como Bearer token al momento 
 ### Auth
 
 - Login
-  - POST : https://taller01-57blocks.herokuapp.com/auth/login
+  - POST : https://{domain}.herokuapp.com/auth/login
   - body {
     email: string, password: string
     }
@@ -37,7 +37,7 @@ La ruta de auth proporciona un JWT que debe usarse como Bearer token al momento 
 ### Users
 
 - Create a new user.
-  - POST : https://taller01-57blocks.herokuapp.com/users/signup
+  - POST : https://{domain}.herokuapp.com/users/signup
   - body {
     name: string, email: string, password: string
     }
@@ -45,13 +45,13 @@ La ruta de auth proporciona un JWT que debe usarse como Bearer token al momento 
 ### Pokemons
 
 - Retrieve all pokemons.
-  - GET : https://taller01-57blocks.herokuapp.com/pokemons/
+  - GET : https://{domain}.herokuapp.com/pokemons/
 - Retrieve pokemons created by the user given the user id.
-  - GET : https://taller01-57blocks.herokuapp.com/pokemons/user/:id
+  - GET : https://{domain}.herokuapp.com/pokemons/user/:id
 - Create a new pokemon.
-  - POST : https://taller01-57blocks.herokuapp.com/pokemons/
+  - POST : https://{domain}.herokuapp.com/pokemons/
   - body {
     name: string, public: boolean
     }
 - Update one of the pokemon's fields given the pokemon's id.
-  - PATCH : https://taller01-57blocks.herokuapp.com/pokemons/:id
+  - PATCH : https://{domain}.herokuapp.com/pokemons/:id
